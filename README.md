@@ -16,7 +16,7 @@ A simple tools for helping generate text file which is formatted as Aplikasi Per
 
 **OUTPUT**:
 
-A file named "replaced_data.txt" will be created in same folder as replacer.php
+A file named _"replaced_data.txt"_ will be created in same folder as _replacer.php_
 
 
 
@@ -38,4 +38,4 @@ A file named "replaced_data.txt" will be created in same folder as replacer.php
 
 **OUTPUT**:
 
-A file named "TXT_<SATKER>.txt" will be created in same folder as bridge.php
+A file named *"TXT_<SATKER>.txt"* will be created in same folder as _bridge.php_
