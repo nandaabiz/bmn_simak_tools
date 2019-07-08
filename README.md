@@ -1,7 +1,7 @@
-# bmn_simak_tools
+# BMN-SIMAK Tools
 A simple tools for helping generate text file which is formatted as Aplikasi Persediaan Importer.
 
-Tools:
+###### Tools:
 1. String Replacer
 USAGE: http://<your_host>/replacer.php?needles=list.txt&data=source.txt
 
@@ -11,6 +11,7 @@ PARAMETERS:
 
 OUTPUT:
 A file named "replaced_data.txt" will be created in same folder as replacer.php
+
 
 
 2. BMN-SIMAK Bridging-Converter
