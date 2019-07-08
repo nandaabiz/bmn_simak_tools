@@ -8,9 +8,10 @@ USAGE: http://<your_host>/replacer.php?needles=list.txt&data=source.txt
 
 PARAMETERS:
 
-```@needles  a list of string with format "to be replaced;replace with" ended by newline placed in same folder as replacer.php
-
-@data     a bunch of string which has string to be replaced ended by newline placed in same folder as replacer.php```
+```
+@needles  a list of string with format "to be replaced;replace with" ended by newline placed in same folder as replacer.php
+@data     a bunch of string which has string to be replaced ended by newline placed in same folder as replacer.php
+```
 
 
 OUTPUT:
@@ -25,15 +26,13 @@ USAGE: http://<your_host>/bridge.php?source=src.csv&thn=2017&satker=PLKP&bln=03&
 
 PARAMETERS:
 
-```@source   a csv file generated from c_nilai_report.xls (output by Aplikasi Persediaan) placed in same folder as replacer.php
-
+```
+@source   a csv file generated from c_nilai_report.xls (output by Aplikasi Persediaan) placed in same folder as replacer.php
 @thn      year of document
-
 @bln      month of document
-
 @satker   name of Satuan Kerja, will be used as output filename
-
-@counter  start of counter (last counter of previous file), usually used when month is not January```
+@counter  start of counter (last counter of previous file), usually used when month is not January
+```
 
 
 OUTPUT:
