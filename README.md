@@ -38,4 +38,4 @@ A file named _"replaced_data.txt"_ will be created in same folder as _replacer.p
 
 **OUTPUT**:
 
-A file named *"TXT_<SATKER>.txt"* will be created in same folder as _bridge.php_
+A file named *"TXT_SATKER.txt"* will be created in same folder as _bridge.php_
