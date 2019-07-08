@@ -1,0 +1,16 @@
+Urutan Bridging Persediaan Semi Manual
+
+1. Minta Excel (c_nilai_report) masing-masing gudang dari Inventaris
+2. Buka file "src.csv" menggunakan Excel dan replace data dari tiap bulan tiap satker dari file Excel di atas
+3. Jalankan aplikasi converter "http://local.simak.tools/bridge.php?source=src.csv&thn=2018&satker=IPSRS&bln=07&counter=9000"
+  - source : file source csv dari poin 2 di atas
+  - thn    : tahun berjalan (YYYY)
+  - satker : inisial satker, fungsi sebagai nama output file (TXT_IPSRS.txt)
+  - bln    : diisi bulan berjalan (MM)
+  - counter: diisi start counter, jika tidak dimulai dari Januari
+4. Ulangi langkah 2-3 untuk setiap bulan semua satker
+5. Setiap file "TXT_NAMASATKER.txt" dimerge
+   
+   
+   
+   
