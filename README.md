@@ -3,6 +3,7 @@ A simple tools for helping generate text file which is formatted as Aplikasi Per
 
 ### Tools:
 1. String Replacer
+
 USAGE: http://<your_host>/replacer.php?needles=list.txt&data=source.txt
 
 PARAMETERS:
@@ -15,6 +16,7 @@ A file named "replaced_data.txt" will be created in same folder as replacer.php
 
 
 2. BMN-SIMAK Bridging-Converter
+
 USAGE: http://<your_host>/bridge.php?source=src.csv&thn=2017&satker=PLKP&bln=03&counter=500
 
 PARAMETERS:
