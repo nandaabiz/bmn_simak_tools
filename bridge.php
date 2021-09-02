@@ -110,9 +110,9 @@ if (!empty($parameter['source'])) {
 				$tgl_m = '31-' . str_pad($bln, 2, '0', STR_PAD_LEFT) . '-' . $thn . ' 23:59:59';
 				$kd_brg = substr($olah['kd_brg'], -6);
 				if (!empty($parameter['lalu'])) {
-					$out_m = "|" . $olah['kd_lokasi'] . "|,|" . $olah['ur_brg'] . "|,|" . $thn . "|,|" . $nodok_m . "|," . $tgl_m . "," . $tgl_m . ",|" . $olah['kd_sskel'] . "|,|" . $kd_brg . "|,|" . $olah['kuantitas_lalu'] . "|,|" . $olah['ur_sskel'] . "|,|ALL GUDANG|,||,|" . 'P01' . "|,|" . $rph_sat . "|,|" . ($olah['kuantitas_lalu'] * $rph_sat) . "|,|" . $flag_kirim . "|\n";
+					$out_m = "|" . $olah['kd_lokasi'] . "|,|" . $olah['ur_brg'] . "|,|" . $thn . "|,|" . $nodok_m . "|,|" . $tgl_m . "|,|" . $tgl_m . "|,|" . $olah['kd_sskel'] . "|,|" . $kd_brg . "|,|" . $olah['kuantitas_lalu'] . "|,|" . $olah['ur_sskel'] . "|,|ALL GUDANG|,||,|" . 'P01' . "|,|" . $rph_sat . "|,|" . ($olah['kuantitas_lalu'] * $rph_sat) . "|,|" . $flag_kirim . "|\n";
 				} else {
-					$out_m = "|" . $olah['kd_lokasi'] . "|,|" . $olah['ur_brg'] . "|,|" . $thn . "|,|" . $nodok_m . "|," . $tgl_m . "," . $tgl_m . ",|" . $olah['kd_sskel'] . "|,|" . $kd_brg . "|,|" . $olah['kuantitas_akhir'] . "|,|" . $olah['ur_sskel'] . "|,|ALL GUDANG|,||,|" . 'P01' . "|,|" . $rph_sat . "|,|" . ($olah['kuantitas_akhir'] * $rph_sat) . "|,|" . $flag_kirim . "|\n";
+					$out_m = "|" . $olah['kd_lokasi'] . "|,|" . $olah['ur_brg'] . "|,|" . $thn . "|,|" . $nodok_m . "|,|" . $tgl_m . "|,|" . $tgl_m . "|,|" . $olah['kd_sskel'] . "|,|" . $kd_brg . "|,|" . $olah['kuantitas_akhir'] . "|,|" . $olah['ur_sskel'] . "|,|ALL GUDANG|,||,|" . 'P01' . "|,|" . $rph_sat . "|,|" . ($olah['kuantitas_akhir'] * $rph_sat) . "|,|" . $flag_kirim . "|\n";
 				}
 				
 				fwrite($hOut, $out_m);
@@ -121,21 +121,21 @@ if (!empty($parameter['source'])) {
 				$nodok_m = $olah['kd_lokasi'] . $thn . str_pad($cnt, 5, '0', STR_PAD_LEFT) . 'M';
 				$tgl_m = '01-' . str_pad($bln, 2, '0', STR_PAD_LEFT) . '-' . $thn . ' 00:00:00';
 				$kd_brg = substr($olah['kd_brg'], -6);
-				$out_m = "|" . $olah['kd_lokasi'] . "|,|" . $olah['ur_brg'] . "|,|" . $thn . "|,|" . $nodok_m . "|," . $tgl_m . "," . $tgl_m . ",|" . $olah['kd_sskel'] . "|,|" . $kd_brg . "|,|" . $olah['kuantitas_lalu'] . "|,|" . $olah['ur_sskel'] . "|,|ALL DEPO|,||,|" . 'M99' . "|,|" . $rph_sat . "|,|" . ($olah['kuantitas_lalu'] * $rph_sat) . "|,|" . $flag_kirim . "|\n";
+				$out_m = "|" . $olah['kd_lokasi'] . "|,|" . $olah['ur_brg'] . "|,|" . $thn . "|,|" . $nodok_m . "|,|" . $tgl_m . "|,|" . $tgl_m . "|,|" . $olah['kd_sskel'] . "|,|" . $kd_brg . "|,|" . $olah['kuantitas_lalu'] . "|,|" . $olah['ur_sskel'] . "|,|ALL DEPO|,||,|" . 'M99' . "|,|" . $rph_sat . "|,|" . ($olah['kuantitas_lalu'] * $rph_sat) . "|,|" . $flag_kirim . "|\n";
 				fwrite($hOut, $out_m);
 				echo "$out_m";
 			} else {
 				$nodok_m = $olah['kd_lokasi'] . $thn . str_pad($cnt, 5, '0', STR_PAD_LEFT) . 'M';
 				$tgl_m = '02-' . str_pad($bln, 2, '0', STR_PAD_LEFT) . '-' . $thn . ' 00:00:01';
 				$kd_brg = substr($olah['kd_brg'], -20);
-				$out_m = "|" . $olah['kd_lokasi'] . "|,|" . $olah['ur_brg'] . "|,|" . $thn . "|,|" . $nodok_m . "|," . $tgl_m . "," . $tgl_m . ",|" . $olah['kd_sskel'] . "|,|" . $kd_brg . "|,|" . $olah['mutasi_tambah'] . "|,|" . $olah['ur_sskel'] . "|,||,||,|" . 'M02' . "|,|" . $rph_sat . "|,|" . ($olah['mutasi_tambah'] * $rph_sat) . "|,|" . $flag_kirim . "|\n";
+				$out_m = "|" . $olah['kd_lokasi'] . "|,|" . $olah['ur_brg'] . "|,|" . $thn . "|,|" . $nodok_m . "|,|" . $tgl_m . "|,|" . $tgl_m . "|,|" . $olah['kd_sskel'] . "|,|" . $kd_brg . "|,|" . $olah['mutasi_tambah'] . "|,|" . $olah['ur_sskel'] . "|,||,||,|" . 'M02' . "|,|" . $rph_sat . "|,|" . ($olah['mutasi_tambah'] * $rph_sat) . "|,|" . $flag_kirim . "|\n";
 				fwrite($hOut, $out_m);
 				echo "$out_m";
 
 				$nodok_k = $olah['kd_lokasi'] . $thn . str_pad($cnt, 5, '0', STR_PAD_LEFT) . 'K';
 				$tgl_k = '03-' . str_pad($bln, 2, '0', STR_PAD_LEFT) . '-' . $thn . ' 00:00:01';
 				$kd_brg = substr($olah['kd_brg'], -20);
-				$out_k = "|" . $olah['kd_lokasi'] . "|,|" . $olah['ur_brg'] . "|,|" . $thn . "|,|" . $nodok_k . "|," . $tgl_k . "," . $tgl_k . ",|" . $olah['kd_sskel'] . "|,|" . $kd_brg . "|,|" . $olah['mutasi_krg'] . "|,|" . $olah['ur_sskel'] . "|,||,||,|" . 'K01' . "|,|" . $rph_sat . "|,|" . ($olah['mutasi_krg'] * $rph_sat) . "|,|" . $flag_kirim . "|\n";
+				$out_k = "|" . $olah['kd_lokasi'] . "|,|" . $olah['ur_brg'] . "|,|" . $thn . "|,|" . $nodok_k . "|,|" . $tgl_k . "|,|" . $tgl_k . "|,|" . $olah['kd_sskel'] . "|,|" . $kd_brg . "|,|" . $olah['mutasi_krg'] . "|,|" . $olah['ur_sskel'] . "|,||,||,|" . 'K01' . "|,|" . $rph_sat . "|,|" . ($olah['mutasi_krg'] * $rph_sat) . "|,|" . $flag_kirim . "|\n";
 				fwrite($hOut, $out_k);
 				echo "$out_k";
 			}
