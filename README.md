@@ -15,9 +15,7 @@ A simple tools for helping generate text file which is formatted as Aplikasi Per
 
 
 **OUTPUT**:
-
-A file named _"replaced_data.txt"_ will be created in same folder as _replacer.php_
-
+A file named "replaced_data.txt" will be created in same folder as this file located
 
 
 
@@ -37,5 +35,18 @@ A file named _"replaced_data.txt"_ will be created in same folder as _replacer.p
 
 
 **OUTPUT**:
+A file named "TXT_<SATKER>.txt" will be created in same folder as this file located
 
-A file named *"TXT_SATKER.txt"* will be created in same folder as _bridge.php_
+
+
+### HPT to FIFO TXT-Converter
+**USAGE**: http://<your_host>/txt2fifo.php?source=TXT_HPT.txt
+
+**PARAMETERS**:
+```
+@source   a text file with format as per bridging BMN standard
+```
+
+
+**OUTPUT**:
+A file named "<SOURCER FILENAME>_FIFO.txt" will be created in same folder as this file located
